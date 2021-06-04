@@ -10,11 +10,11 @@ vm_ip = "192.168.100.40"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   ## Choose your base box
   #config.vm.box = "debian/stretch64"
-  config.vm.box = "bento/ubuntu-18.04"
+  config.vm.box = "ubuntu/bionic64"
   
   ## Customize memory & CPUs
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = 1024
+    vb.memory = 2048
     vb.cpus = 2
   end
   
